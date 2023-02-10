@@ -27,7 +27,7 @@ if __name__ == "__main__":
     workbook = openpyxl.Workbook()
     worksheet = workbook.active
     worksheet.title = "Results"
-    worksheet.append(["Found/Not Found", "Value", "Sheet"])
+    worksheet.append(["Found/Not Found", "Machine", "Location"])
     green_fill = openpyxl.styles.PatternFill(start_color="00FF00", end_color="00FF00", fill_type="solid")
     for value, sheet_name in found:
         worksheet.append(["Found", value, sheet_name])
